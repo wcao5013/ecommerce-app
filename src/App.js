@@ -1,21 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom'
-import { Shop } from './Pages/shop/shop'
-import { cart } from './Pages/cart/cart'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { shop } from './pages/shop/shop'
+import { cart } from './pages/cart/cart'
+import { home } from './pages/home/home'
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
           <Router>
+            
             <Routes>
-              <Route path='/' />
-
-              <Route path='/cart' />
+              <Route path='/' element={<home />} />
+              <Route path='/shop' element={<shop />} />
+              <Route path='/cart' element={<cart />} />
             </Routes>
           </Router>
-        </BrowserRouter>
     </div>
   );
 }
