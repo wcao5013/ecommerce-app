@@ -3,6 +3,7 @@ import { Container } from 'reactstrap'
 import SubHeader from '../../components/SubHeader'
 import { PRODUCTS } from '../../products'
 import { Product } from './product'
+import styles from './shop.css'
 
  export const Shop = () => {
   return (

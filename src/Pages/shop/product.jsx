@@ -18,7 +18,7 @@ export const Product = (product) => {
         <Card.Body className='description'>
           <Card.Title><b>{productName}</b></Card.Title>
           <Card.Text >
-            This {productName} is part of the {category} category
+            This {productName} is part of the {category} category<br></br>
             Price: $ {price} 
           </Card.Text>
           <Button variant="primary">Buy me</Button>
