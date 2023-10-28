@@ -20,19 +20,19 @@ export const Product = (product) => {
     //orginially wanted to use above but decided to use a card
       <div className='product'>
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={productImage} />
-        <Card.Body className='description'>
-          <Card.Title><b>{productName}</b></Card.Title>
-          <Card.Text >
-            This {productName} is part of the {category} category<br></br>
-            Price: $ {price} 
-          </Card.Text>
-          <Button variant="primary" className='addToCartBttn' onClick={() => addToCart(id)}>
-            Add to Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
-          {/* add # next to add cart */}
-          </Button>
-        </Card.Body>
-      </Card>
+          <Card.Img variant="top" src={productImage} />
+          <Card.Body className='description'>
+            <Card.Title><b>{productName}</b></Card.Title>
+            <Card.Text >
+              This {productName} is part of the {category} category<br></br>
+              Price: $ {price} 
+            </Card.Text>
+            <Button variant="primary" className='addToCartBttn' onClick={() => addToCart(id)}>
+              Add to Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
+            {/* add # next to add cart */}
+            </Button>
+          </Card.Body>
+        </Card>
       </div>
       
   )
