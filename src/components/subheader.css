@@ -1,0 +1,35 @@
+/* This is just styling for the subheader */
+
+.breadcrumb {
+    display: flex;
+    list-style: none;
+}
+/* className of breadcrumb to show properly */
+
+.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* for the list item of className */
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+
+.breadcrumb li a {
+    color: #f00404;
+    text-decoration: none;
+}
+/* before click color */
+
+.breadcrumb li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+/* after hover over icon */
+
+  
