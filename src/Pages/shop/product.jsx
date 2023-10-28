@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Button, Card } from 'react-bootstrap'
+import { ShopContext} from '../../context/shop-context'
 
 export const Product = (product) => {
     const { id, productName, price, productImage, category} = product.data
+    const { addToCart, cartItems } = useContext(ShopContext)
+
+    const cartItemAmount = cartItems[id]
     return (
     // <div className='product'>
     //   <img src={productImage} />
@@ -12,6 +16,8 @@ export const Product = (product) => {
     //     <p>${price}</p>
     //   </div>
     // </div>
+    
+    //orginially wanted to use above but decided to use a card
       <div className='product'>
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={productImage} />
@@ -21,7 +27,10 @@ export const Product = (product) => {
             This {productName} is part of the {category} category<br></br>
             Price: $ {price} 
           </Card.Text>
-          <Button variant="primary">Buy me</Button>
+          <Button variant="primary" className='addToCartBttn' onClick={() => addToCart(id)}>
+            Add to Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
+          {/* add # next to add cart */}
+          </Button>
         </Card.Body>
       </Card>
       </div>
