@@ -5,6 +5,7 @@ import { PRODUCTS } from '../../products'
 import { Product } from '../shop/product'
 import { ShopContext } from '../../context/shop-context'
 import { CartItem } from './cart-item'
+import styles from './cart.css'
 
 export const Cart = () => {
   const { cartItems } = useContext(ShopContext)
