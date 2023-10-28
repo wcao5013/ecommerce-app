@@ -13,55 +13,55 @@ export const PRODUCTS = [
         productName: "IPhone red",
         price: 999.0,
         productImage: product1,
-        category: phone
+        category: 'phone'
       },
       {
         id: 2,
         productName: "IPhone yellow",
         price: 1999.0,
         productImage: product2,
-        category: phone
+        category: 'phone'
       },
       {
         id: 3,
         productName: "IPhone purple",
         price: 699.0,
         productImage: product3,
-        category: phone
+        category: 'phone'
       },
       {
         id: 4,
         productName: "Ipad blue",
         price: 228.0,
         productImage: product4,
-        category: tablet
+        category: 'tablet'
       },
       {
         id: 5,
         productName: "Ipad pink",
         price: 19.99,
         productImage: product5,
-        category: tablet
+        category: 'tablet'
       },
       {
         id: 6,
         productName: "Ipad yellow",
         price: 68.0,
         productImage: product6,
-        category: tablet
+        category: 'tablet'
       },
       {
         id: 7,
         productName: "Watch",
         price: 120.0,
         productImage: product7,
-        category: tablet
+        category: 'watch'
       },
       {
         id: 8,
         productName: "Airtag",
         price: 40.0,
         productImage: product8,
-        category: tracker
+        category: 'tracker'
       },
 ]
