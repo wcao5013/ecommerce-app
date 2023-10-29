@@ -15,8 +15,7 @@ import styles from './navbar.css';
                     <TShirt size={32} />
                 </Link>
                 <Link to="/cart">
-                    <ShoppingCart size={32} />
-                    
+                    <ShoppingCart size={32} />  
                 </Link>
             </div>
         </div>
