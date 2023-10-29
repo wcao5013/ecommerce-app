@@ -12,7 +12,7 @@ export const CartItem = (product) => {
                 <Card.Body className='description'>
                     <Card.Title><b>{productName}</b></Card.Title>
                     <Card.Text className='text' >
-                    Price: $ {price} 
+                    Price: $ {price}
                     </Card.Text>
                     <Button variant="primary" className='addToCartBttn' >
                     
