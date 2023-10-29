@@ -4,9 +4,9 @@ import { ShopContext} from '../../context/shop-context'
 
 export const Product = (product) => {
     const { id, productName, price, productImage, category} = product.data
-    const { addToCart, cartItems } = useContext(ShopContext)
+    const { addToCart } = useContext(ShopContext)
 
-    const cartItemAmount = cartItems[id]
+    
     return (
     // <div className='product'>
     //   <img src={productImage} />
@@ -28,7 +28,7 @@ export const Product = (product) => {
               Price: $ {price} 
             </Card.Text>
             <Button variant="primary" className='addToCartBttn' onClick={() => addToCart(id)}>
-              Add to Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
+              Add to Cart 
             {/* add # next to add cart */}
             </Button>
           </Card.Body>
