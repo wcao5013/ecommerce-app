@@ -2,28 +2,34 @@
     margin-top: 5px;
     display: flex;
     justify-content: flex-end;
-    margin: auto;
-
-  }
-  
-  .searchInputs input {
+    margin-left: auto;
     background-color: rgb(255, 255, 255);
     border-style:  dashed;
     border-radius: 10px;
     border-width: 5px;
-    padding: 2px;
+    height: 25px;
+    width: 250px;
+    color: rgb(152, 152, 152);
+
+  }
+  
+  .searchInputs input {
+    
+    padding: 0px;
     font-size: 18px;
     font-weight: bold;
+    border-radius: 10px;
     /* color: red; */  
     height: 25px;
     width: 250px;
+    border: none;
     /* This text is gray when not focused */
   }
  
   
   .searchIcon {
-    height: 60px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     background-color: white;
     display: grid;
     place-items: center;
@@ -50,8 +56,8 @@
     overflow: hidden;
     overflow-y: auto;
     float: right;
-    margin-right: 55px;
-    margin-top: -20px;
+    margin-right: 5px;
+    margin-top: 10px;
     
   }
   
