@@ -12,7 +12,7 @@ function SearchBar({ placeholder, data }) {
         <div className='searchInputs'>
             <input type='text' placeholder={placeholder}/>
             <div className='searchIcon'>
-                <MagnifyingGlass size={24} color="#f90101" weight="bold" />
+                <MagnifyingGlass size={22} color="#f90101" weight="bold" />
             </div>
         </div>
         <div className='dataResult'></div>
