@@ -7,6 +7,7 @@ import { Home } from './pages/home/home'
 import { Navbar } from './components/navbar';
 import SubHeader from './components/SubHeader';
 import { ShopContextProvider } from './context/shop-context';
+import SearchBar from './components/SearchBar';
 // above includes BrowserRouter, navbar, links # Home. shop and cart
 //includes the following installs: reactstrap, mui material, phsopher-react, react-router-dom
 // originally wanted to use reactstrap for SubHeader but decided to go with mui
@@ -18,6 +19,7 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Navbar />
+          <SearchBar />
           <Routes>
             <Route path='/' element={< Home />} />
             <Route path='/shop' element={< Shop />} />
