@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { MagnifyingGlass, X, XSquare } from 'phosphor-react'
+import { MagnifyingGlass, XSquare } from 'phosphor-react'
 import { Link } from 'react-router-dom'
 
 import styles from './SearchBar.css'
@@ -28,10 +28,18 @@ function SearchBar({ placeholder, data }) {
         setWordEntered('')
     }
 
+    const handleKeyDown = (e) => {
+
+        if (e.key === 'Enter') {
+            window.location.href = '/shop'
+            console.log('Entered key pressed')
+        }
+    }
+
   return (
     <div className='Search'>
         <div className='searchInputs'>
-            <input type='text' placeholder={placeholder} value={wordEntered} onChange={handleFilter}/>
+            <input type='search' placeholder={placeholder} value={wordEntered} onChange={handleFilter}  onKeyDown={handleKeyDown}/>
             <div className='searchIcon'>
                 {filteredData.length === 0 ? <MagnifyingGlass size={22} color="#f90101" weight="bold" /> : (
                     <XSquare size={22} color="#f90101" weight='bold' id="clearBtn" onClick={clearInput} />
