@@ -42,6 +42,10 @@
     font-weight: bolder;
     margin-top: 30px;
   }
+
+  .checkout p {
+    font-weight: bold;
+  }
   
   .checkout button {
     width: 150px;
