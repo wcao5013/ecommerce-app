@@ -25,5 +25,3 @@ import styles from './shop.css'
     
   )
 }
-
-
