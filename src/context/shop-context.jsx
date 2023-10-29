@@ -27,7 +27,7 @@ export const ShopContextProvider = ( product ) => {
     //above are the request to add, remove and updatecart
 
 
-    const contextValue = {cartItems, addToCart, removeFromCart}
+    const contextValue = {cartItems, addToCart, removeFromCart, updateCartItemCount}
 
     
     console.log(cartItems)

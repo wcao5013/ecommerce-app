@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext} from 'react'
 import { Button, Card } from 'react-bootstrap'
+import { Input } from 'reactstrap'
+import { ShopContext } from '../../context/shop-context'
 
 
 export const CartItem = (product) => {
     const { id, productName, price, productImage, category} = product.data
-  
+    const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
+    
     return (
         <div className='cartItem'>
             <Card style={{display: 'flex', flexDirection: 'row'}}>
@@ -14,9 +17,11 @@ export const CartItem = (product) => {
                     <Card.Text className='text' >
                     Price: $ {price}
                     </Card.Text>
-                    <Button variant="primary" className='addToCartBttn' >
-                    
-                    </Button>
+                    <div className='countHandler'>
+                        <Button onClick={() => removeFromCart(id)}> - </Button>
+                        <Input  value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}/>
+                        <Button onClick={() => addToCart(id)}> + </Button>
+                    </div>
                 </Card.Body>
             </Card>
       </div>
