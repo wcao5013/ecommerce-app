@@ -13,10 +13,12 @@
     padding: 2px;
     font-size: 18px;
     font-weight: bold;
-    color: red;
+    /* color: red; */  
     height: 25px;
     width: 250px;
+    /* This text is gray when not focused */
   }
+ 
   
   .searchIcon {
     height: 60px;
@@ -28,6 +30,10 @@
   
   input:focus {
     outline: none;
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* This is showing gradient text when click on */
   }
   .searchIcon svg {
     font-size: 35px;
