@@ -1,0 +1,9 @@
+.banner {
+    display: grid;
+    align-items: center;
+}
+
+.banner svg {
+    align-items: center;
+}
+
