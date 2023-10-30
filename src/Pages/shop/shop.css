@@ -1,5 +1,5 @@
 .products {
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -41,4 +41,82 @@
     background-color: rgb(19, 19, 19);
     color: white;
     cursor: pointer;
+}
+
+/* ***************** Mobile view ******************* */
+
+@media (prefers-reduced-motion: no-preference) {
+    /*don't think I need this*/
+}
+/* Change view depending on size of screen */
+@media only screen and (max-width: 600px) {
+  .products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .product {
+    width: 300px;
+    height: 350px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .product .description {
+    text-align: center;
+    
+  }
+
+
+
+}
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  .products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .product {
+    width: 300px;
+    height: 350px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .product .description {
+    text-align: center;
+    
+  }
+}
+
+/*I don't I need any of these below*/
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  
 }
