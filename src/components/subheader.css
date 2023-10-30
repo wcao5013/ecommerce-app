@@ -41,4 +41,40 @@
 }
 /* after hover over icon */
 
+@media (prefers-reduced-motion: no-preference) {
+  /*not necessary*/
+  }
+  /* Change view depending on size of screen */
+  @media only screen and (max-width: 600px) {
+    .breadcrumb {
+        display: flex;
+        list-style: none;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        margin-left: -2rem;
+        
+    }
+  }
+  @media only screen and (min-width: 600px) {
+   /* may not need this */
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .breadcrumb {
+        display: flex;
+        list-style: none;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        margin-left: -2rem;
+        
+    }
+  }
+  /* may not need any of these */
+  @media only screen and (min-width: 992px) {
+  
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    
+  }
   
