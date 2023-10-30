@@ -45,3 +45,43 @@
     background-color: transparent;
     color: red;
 }
+
+/* ***************** Mobile view ******************* */
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  /* Change view depending on size of screen */
+  @media only screen and (max-width: 600px) {
+    .links {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    .links {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    
+    }
+  }
+/* I dont think I need these setting for  other 
+then these above screen sizes */
+  @media only screen and (min-width: 768px) {
+  
+  }
+  
+  @media only screen and (min-width: 992px) {
+  
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    
+  }
