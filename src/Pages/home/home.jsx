@@ -3,7 +3,7 @@ import SubHeader from '../../components/SubHeader'
 import { Container } from 'reactstrap'
 import Lottie from "lottie-react";
 import phone from '../../assets/animation/phone.json'
-import './home.css'
+import styles from './home.css'
 
 
 export const Home = () => {
