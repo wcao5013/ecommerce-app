@@ -8,13 +8,13 @@ import styles from './navbar.css';
     <div>
         <div className='navbar'>
             <div className='links'>
-                <Link to="/">
+                <Link to="/" className='homelink'>
                     <House size={32} />
                 </Link>
-                <Link to="/shop">
+                <Link to="/shop" className='shoplink'>
                     <TShirt size={32} />
                 </Link>
-                <Link to="/cart">
+                <Link to="/cart" className='cartlink'>
                     <ShoppingCart size={32} />  
                 </Link>
             </div>

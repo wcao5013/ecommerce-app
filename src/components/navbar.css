@@ -11,6 +11,7 @@
     margin-right: 50px;
     display: flex;
     align-items: center;
+
 }
 
 .links a {
@@ -18,4 +19,27 @@
     color: white;
     margin-left: 20px;
     font-size: 25px;
+    
+    
+}
+
+.homelink:hover {
+    animation: shakeY;
+    animation-duration: 3s;
+    background-color: transparent;
+    color: red;
+}
+
+.shoplink:hover {
+    animation: shakeY;
+    animation-duration: 3s;
+    background-color: transparent;
+    color: red;
+}
+
+.cartlink:hover {
+    animation: shakeY;
+    animation-duration: 3s;
+    background-color: transparent;
+    color: red;
 }

@@ -46,12 +46,18 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: rubberBand;
+    animation-duration: 2s;
     
     /* This is showing gradient text when click on */
   }
   .searchIcon svg {
     font-size: 30px;
     
+  }
+  .searchIcon svg:hover {
+    animation: rubberBand;
+    animation-duration: 2s;
   }
   
   .dataResult {
