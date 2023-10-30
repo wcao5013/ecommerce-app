@@ -13,7 +13,7 @@ export const Home = () => {
       <div className='banner'>
         <h1>homet</h1>
         <div className='centeredLottie'>
-          <Lottie animationData={phone} style={{ width: 300, height: 300 }} />
+          <Lottie animationData={phone} style={{ width: 500, height: 500 }} />
         </div>
       </div>
     </Container>
