@@ -9,6 +9,7 @@ import SubHeader from './components/SubHeader';
 import { ShopContextProvider } from './context/shop-context';
 import SearchBar from './components/SearchBar';
 import { PRODUCTS } from './products'
+import 'animate.css'
 // above includes BrowserRouter, navbar, links # Home. shop and cart
 //includes the following installs: reactstrap, mui material, phsopher-react, react-router-dom
 // originally wanted to use reactstrap for SubHeader but decided to go with mui
