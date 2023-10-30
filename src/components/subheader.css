@@ -3,6 +3,9 @@
 .breadcrumb {
     display: flex;
     list-style: none;
+    animation: bounceInLeft;
+    animation-duration: 1.5s;
+    
 }
 /* className of breadcrumb to show properly */
 
@@ -10,6 +13,9 @@
     display: inline;
     font-size: 18px;
     font-weight: bold;
+    animation: wobble;
+    animation-duration: 2s;
+   
 }
 /* for the list item of className */
 
@@ -17,18 +23,21 @@
     padding: 8px;
     color: black;
     content: "/\00a0";
+
 }
 
 
 .breadcrumb li a {
     color: #f00404;
     text-decoration: none;
+    
 }
 /* before click color */
 
 .breadcrumb li a:hover {
     color: #000000;
-    text-decoration: underline;
+    text-decoration: underline;  
+    
 }
 /* after hover over icon */
 
