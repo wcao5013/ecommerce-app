@@ -12,7 +12,9 @@ export const Home = () => {
       <SubHeader current='' />
       <div className='banner'>
         <h1>homet</h1>
-        <Lottie animationData={phone} style={{ width: 300, height: 300, }}/>
+        <div className='centeredLottie'>
+          <Lottie animationData={phone} style={{ width: 300, height: 300 }} />
+        </div>
       </div>
     </Container>
   
