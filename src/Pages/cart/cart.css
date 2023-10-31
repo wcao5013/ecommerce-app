@@ -237,5 +237,75 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  
+  .cart {
+    display: grid;
+    position: relative;
+  }
+
+  .cartItem {
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-bottom: 0rem;
+    box-shadow: 0px .1875rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.5625rem;
+
+    
+  }
+  .cartItemCard {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    float: left
+
+  }
+
+  .cartItem .image {
+    width: 100%;
+    height: 15vh;
+    object-fit: contain;
+
+    margin-left: -18rem;
+    float: left;
+    }
+
+  .cartItemCard .image {
+    width: 100%;
+    height: 15vh;
+    object-fit: contain;
+    float: left;
+    margin-top: -.5rem;
+
+  }
+
+
+  .cartItemCard .description {
+    margin-left: 27rem;
+    padding-bottom: 15rem;
+    margin-top: .75rem;
+  }
+  .cartItemCard .text {
+    margin-bottom: 0rem;
+  }
+
+    
+  .countHandler {
+    border-width: .5rem;
+    width: auto;
+    
+  }
+
+  .checkout {
+    position: fixed;
+    bottom: 0rem;
+    margin-left: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  .checkout p {
+    font-weight: bold;
+    margin-bottom: 0rem;
+  }
 }
