@@ -2,6 +2,7 @@ import React, { useContext} from 'react'
 import { Button, Card } from 'react-bootstrap'
 import { Input } from 'reactstrap'
 import { ShopContext } from '../../context/shop-context'
+import styles from './cart.css'
 
 
 export const CartItem = (product) => {
@@ -9,8 +10,8 @@ export const CartItem = (product) => {
     const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
     
     return (
-        <div className='cartItem'>
-            <Card style={{display: 'flex', flexDirection: 'row'}}>
+        <div className='cartItemCard'>
+            <Card >
                 <Card.Img  variant='top' src={productImage} className='image' />
                 <Card.Body className='description'>
                     <Card.Title><b>{productName}</b></Card.Title>
@@ -28,5 +29,6 @@ export const CartItem = (product) => {
       
   )
 }
+// style={{display: 'flex', flexDirection: 'row'}}
 
 

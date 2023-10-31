@@ -20,7 +20,7 @@ export const Cart = () => {
       <div className='cart'>
         <h1>Your cart Items</h1>
       </div>
-      <div className='cartItems'>
+      <div className='cartItem'>
         {PRODUCTS.map((product) => {
             if (cartItems[product.id] !== 0) {
                 return <CartItem data={product} />
