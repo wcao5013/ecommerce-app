@@ -161,6 +161,7 @@
 @media only screen and (min-width: 768px) {
   .cart {
     display: grid;
+    position: relative;
   }
 
   .cartItem {
@@ -203,7 +204,7 @@
 
 
   .cartItemCard .description {
-    margin-left: 18rem;
+    margin-left: 15rem;
     padding-bottom: 15rem;
     margin-top: .75rem;
   }
@@ -219,12 +220,15 @@
   }
 
   .checkout {
-    ;
+    position: fixed;
+    bottom: 0rem;
+    margin-left: 16rem;
+    margin-bottom: 2rem;
   }
 
   .checkout p {
     font-weight: bold;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0rem;
   }
 }
 
