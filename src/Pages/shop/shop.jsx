@@ -11,7 +11,7 @@ import styles from './shop.css'
       <SubHeader current='shop' />
       <div className='shop'>
         <div className='shopTitle'>
-          <h1>Wan's sweatshop</h1>
+          <h1>Wan's shop</h1>
         </div>
         <div className='products' >
           {' '}

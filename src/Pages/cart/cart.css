@@ -5,7 +5,7 @@
     align-items: center;
   }
   
-  .cartItem {
+  /* .cartItem { */
     /* width: 100%;
     height: 12.5rem;
     display: flex;
@@ -16,9 +16,9 @@
     margin: 30px;
     justify-content: left; */
     
-  }
+  /* } */
 
-  .cartItemCard {
+  /* .cartItemCard { */
     /* width: 100%;
     height: 12.5rem;
     display: flex;
@@ -31,16 +31,16 @@
     display: flex;
     flex-direction: row; */
     
-  }
+  /* } */
 /*may need to change width back to 700 for cartItem and added justify-content*/
   
-  .cartItem .image {
+  /* .cartItem .image { */
     /* width: 100%;
     height: 15vh;
     object-fit: contain;
     align-content: flex-start;
     margin-right: 520px; */
-    }
+    /* } */
  /* set image is to the left and made it smaller */
   
   .cartItem .description {
