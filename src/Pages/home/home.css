@@ -1,6 +1,7 @@
 .banner {
     display: grid;
     align-items: center;
+    text-align: center;
 }
 
 .centeredLottie {
@@ -9,6 +10,14 @@
     align-items: center;
     height: 100%;
   }
+p {
+  text-align: center;
+  display: block;
+  text-indent: 3.125;
+  padding: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
 
 /* ***************** Mobile view ******************* */
 
